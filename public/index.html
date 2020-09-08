@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App by Ivan Kalema</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyDqBgPKgXbv9te5hljtI-sUKyOnqQKbjlc",
+    authDomain: "weatherapp-practice-project.firebaseapp.com",
+    databaseURL: "https://weatherapp-practice-project.firebaseio.com",
+    projectId: "weatherapp-practice-project",
+    storageBucket: "weatherapp-practice-project.appspot.com",
+    messagingSenderId: "604693741660",
+    appId: "1:604693741660:web:208d64113b735733302699",
+    measurementId: "G-TBTQHNB5RW"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+    <div class="app-wrap">
+        <div class="heading1"><h1>WeatherApp</h1>
+        <hr>
+    </div>
+        <header>
+        
+            <input type="search" placeholder="Search for a City..." autocomplete="off" class="search-box">
+        </header>
+
+        <main>
+         <section class="location">
+             <div class="city">City, Country</div>
+             <div class="date">Tuesday 02 September 2020</div>
+         </section>
+         <div class="current">
+             <div class="temp">-<span>°c</span></div>
+             <div class="weather">It is Winter Now</div>
+             <div class="hi-low">-2°c / 16°c</div>
+         </div>
+        </main>
+    </div>
+
+
+
+<script src="scripting.js"></script>
+</body>
+
+</html>
